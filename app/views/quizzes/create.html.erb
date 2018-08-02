@@ -1,7 +1,11 @@
 <div class="container">
   <div class="row justify-content-center">
-  <h1>WE'VE FOUND YOUR SUPERHERO NAME</h1>
+    <h1>WE'VE FOUND YOUR SUPERHERO NAME</h1>
 
-  <h2>Congratulations <%= @name %> with the power of <%= @power %></h2>
+    <h2>Congratulations <%= @name %> with the power of <%= @power %></h2>
+  </div>
+
+  <div class="row justify-content-center">
+    <%= link_to 'Take quiz again', new_quiz_path, class: 'btn btn-lg btn-danger' %>   
   </div>
 </div>
